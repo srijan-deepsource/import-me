@@ -42,6 +42,15 @@ class ScopeMe:
             print(magicnumber)
             return "Inner method exited."
 
+magicnumber = "fourty-two"
+
+
+def another_function(set):
+    global magicnumber
+    magicnumber = set
+    return magicnumber
+
+
 def walk_dir(path):
     """Walk the path."""
     return walk(path)
